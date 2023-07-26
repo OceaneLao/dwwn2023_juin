@@ -1,0 +1,112 @@
+    1  git init
+    2  git add .
+    3  git commit -m "message"
+    4  git remote add origin https://github.com/OceaneLao/metallum.git
+    5  git push -u origin main
+    6  git fetch https://github.com/OceaneLao/metallum.git
+    7  export DISABLE_AUTO_TITLE="true"
+    8  echo -n -e "\033]0;metallum Shell\007"
+    9  export MYSQL_HOME="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Roaming/Local/run/HM1cy5rSA/conf/mysql"
+   10  export PHPRC="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Roaming/Local/run/HM1cy5rSA/conf/php"
+   11  export WP_CLI_CONFIG_PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/config.yaml"
+   12  export WP_CLI_DISABLE_AUTO_CHECK_UPDATE=1
+   13  # Add PHP, MySQL, and WP-CLI to $PATH
+   14  echo "Setting Local environment variables..."
+   15  export PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/lightning-services/mysql-8.0.16+6/bin/win64/bin:$PATH"
+   16  export PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/lightning-services/php-8.1.9+8/bin/win64:$PATH"
+   17  export PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/win32:$PATH"
+   18  export PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/bin/composer/win32:$PATH"
+   19  export MAGICK_CODER_MODULE_PATH="C:\Users\VAI-CM06-SG16-ADMIN\AppData\Local\Programs\Local\resources\extraResources\lightning-services\php-8.1.9+8\bin\win32\ImageMagick\modules-Q16\coders"
+   20  echo "----"
+   21  echo "WP-CLI:   $(wp --version)"
+   22  echo "Composer: $(composer --version | cut -f3-4 -d" ")"
+   23  echo "PHP:      $(php -r "echo PHP_VERSION;")"
+   24  echo "MySQL:    $(mysql --version)"
+   25  echo "----"
+   26  cd "/c/Users/VAI-CM06-SG16-ADMIN/Local Sites/metallum/app/public"
+   27  echo "Launching shell: $SHELL ..."
+   28  exec $SHELL
+   29  git init
+   30  git add .
+   31  export DISABLE_AUTO_TITLE="true"
+   32  echo -n -e "\033]0;metallum Shell\007"
+   33  export MYSQL_HOME="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Roaming/Local/run/HM1cy5rSA/conf/mysql"
+   34  export PHPRC="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Roaming/Local/run/HM1cy5rSA/conf/php"
+   35  export WP_CLI_CONFIG_PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/config.yaml"
+   36  export WP_CLI_DISABLE_AUTO_CHECK_UPDATE=1
+   37  # Add PHP, MySQL, and WP-CLI to $PATH
+   38  echo "Setting Local environment variables..."
+   39  export PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/lightning-services/mysql-8.0.16+6/bin/win64/bin:$PATH"
+   40  export PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/lightning-services/php-8.1.9+8/bin/win64:$PATH"
+   41  export PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/win32:$PATH"
+   42  export PATH="/c/Users/VAI-CM06-SG16-ADMIN/AppData/Local/Programs/Local/resources/extraResources/bin/composer/win32:$PATH"
+   43  export MAGICK_CODER_MODULE_PATH="C:\Users\VAI-CM06-SG16-ADMIN\AppData\Local\Programs\Local\resources\extraResources\lightning-services\php-8.1.9+8\bin\win32\ImageMagick\modules-Q16\coders"
+   44  echo "----"
+   45  echo "WP-CLI:   $(wp --version)"
+   46  echo "Composer: $(composer --version | cut -f3-4 -d" ")"
+   47  echo "PHP:      $(php -r "echo PHP_VERSION;")"
+   48  echo "MySQL:    $(mysql --version)"
+   49  echo "----"
+   50  cd "/c/Users/VAI-CM06-SG16-ADMIN/Local Sites/metallum/app/public"
+   51  echo "Launching shell: $SHELL ..."
+   52  exec $SHELL
+   53  hostname
+   54  whoami
+   55  pwd
+   56  cd ..
+   57  ls
+   58  dir
+   59  cd -
+   60  cd ~/desktop/
+   61  cd ~/Desktop/
+   62  mkdir Toto
+   63  ls
+   64  ls -l
+   65  ls -la
+   66  cd Toto/
+   67  touch Bibu.txt
+   68  ls -l
+   69  touch Biba.txt
+   70  ls -l
+   71  mkdir Data 
+   72  cd Data/
+   73  touch merci.txt
+   74  cd ..
+   75  ls -la
+   76  git init
+   77  echo "Bonjour" > Biba.txt
+   78  git add .
+   79  git status
+   80  git commit -m "Mon premier commit"
+   81  cat Biba.txt
+   82  echo "Au revoir" >> Biba.txt
+   83  cat Biba.txt
+   84  git add .
+   85  git commit -m "Deuxième commit"
+   86  echo "Hello" > Bibu.txt
+   87  git add .
+   88  git commit -m "Troisieme commit"
+   89  git branch Test
+   90  git checkout Test
+   91  git add .
+   92  git commit -m "Branch test"
+   93  git rm Biba.txt 
+   94  git rm -rf Data/
+   95  git add *
+   96  git commit -m "Suppression de fichiers"
+   97  ls
+   98  git checkout master 
+   99  ls
+  100  touch ./Data/{oh,ah}.txt
+  101  ls
+  102  ls ./Data/
+  103  git add *
+  104  git commit -m "Ajout de fichiers"
+  105  git checkout Test
+  106  git branch Re7
+  107  git checkout Re7
+  108  git add .
+  109  git commit -m "Création Re7"
+  110  touch Historique.txt
+  111  history
+  112  history > Historique.txt 
